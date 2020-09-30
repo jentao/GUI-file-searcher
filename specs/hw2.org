@@ -1,0 +1,21 @@
+* File Index
+** Definition
+One way to represent a collection of files is to think of it as a map from words
+to a map from filenames to a list of locations in the file where the word
+occurs.  This allows files and locations where a given word occurs to be looked
+up quickly.
+
+** Requirements
+A file index should be able to be constructed by giving one occurrence index and
+a corresponding filepath at once.  At any time, with good performance, the
+application should be able to retrieve a list of files identified by filepaths
+where a specified word occurs, and the list of locations where a specified word
+occurs in that file should also be able to be retrieved.  It should also be
+possible to view all the words in the index.
+
+* Requirements
+Write a README that describes how to use a ~make~ command to generate:
+- ~build/submission.jar~: A library containing the classes you implemented.
+- ~build/docs/index.html~: A webpage that describes the interface of the classes
+  you implemented.
+Make sure the hw1 classes still appear in these artifacts.

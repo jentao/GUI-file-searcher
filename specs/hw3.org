@@ -1,0 +1,55 @@
+* Parsing Files Into Occurrence Indices
+** Definition
+A file consists of some number of words, which are strings of alphabetic
+characters separated by non-alphabetic characters.  For instance, "hello world"
+contains two words, "hello" and "world".  "hello1world" also contains two words,
+"hello" and "world".  Additionally, words should be converted to lowercase so
+that they are treated as equal in a case-insensitive manner.
+
+** Requirements
+Read the hw1 spec for a definition of an occurrence index.  Implement the
+functionality of parsing a given file into an occurrence index.  The location of
+an occurrence of a word in a file should simply be the file offset of the first
+character of the word from the beginning of the file in number of characters (a
+newline counts as one character).
+
+* Serializing the Occurrence Index
+** Requirements
+The next task is to define a file format for the occurrence index such that a
+client can ask for an occurrence index to be saved to a specified filepath, and
+then the client can later ask for the occurrence index to be loaded from that
+file.  This should not be done by simply putting the words from the occurrence
+index back into their correct places in the file - in theory, such a file should
+be smaller than the original file used to create the occurrence index.  However,
+in practice, this is difficult to achieve.  Simply using the ~Serializable~
+interface is likely to result in a file 2x bigger than the original file.
+Still, use ~Serializable~, or try something more clever.
+
+* Putting It All Together
+** Requirements
+Read the hw2 spec for a definition of a file index.  Define a function such
+that, given the filepath to a directory, searches through the directory and all
+its subdirectories (recursively, so this should traverse all directories that
+have the given directory as an ancestor) for files with the ~.txt~ file
+extension.  For each file, parse it into an occurrence index.  For each
+occurrence index, add it into a file index to return to the user.
+
+Find an example directory (compressed using ~tar~) with files to index on the
+[[https://courses.cs.washington.edu/courses/cse331/20su/index/books.tar][course website]].
+
+You are free to generate a serialized version of each occurrence index as you
+create it, say, in a file with the same name as the original file but with a
+~.idx~ extension.  This could then be reused on repeat calls to this function.
+However, unless you specially design your serialization format, this is likely
+to actually have lower performance compared to simply parsing the file itself.
+
+You may find the functions of the Java standard library ~File~ object useful
+here - in particular, look at ~listFiles~, ~getName~, ~isDirectory~, and
+~isFile~.
+
+* Requirements
+Write a README that describes how to use a ~make~ command to generate:
+- ~build/submission.jar~: A library containing the classes you implemented.
+- ~build/docs/index.html~: A webpage that describes the interface of the classes
+  you implemented.
+Make sure the hw1 and hw2 classes still appear in these artifacts.

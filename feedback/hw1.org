@@ -1,0 +1,8 @@
+** Usability
+Nice job. One thing is to mention in the class specification that
+empty strings are not considered to be words if that is an
+important aspect of your design.
+
+** OccurrenceIndex
+None.
+

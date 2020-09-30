@@ -1,0 +1,21 @@
+* File Search
+** Requirements
+See the hw2 spec for the defintion of a file index, and hw3 for the definition
+of a funciton to parse a directory into a file index.  All you have to do is
+define a command line application such that, given a directory, allows the user
+to search for all instances of a particular word in any ~.txt~ file in the given
+directory or any of its subdirectories.  The visualization of the search results
+is up to you, but there should be some ability to learn which files the word is
+contained in, as well as view the 100 characters closest to the position of the
+word in that file (think of it like a Google search, where each link is
+accompanied by a preview of the content in which the search terms are
+contained).
+
+* Requirements
+Write a README that describes how to use a ~make~ command to generate:
+- ~build/submission.jar~: A library containing the classes you implemented.
+- ~build/docs/index.html~: A webpage that describes the interface of the classes
+  you implemented.
+Make sure the hw1, hw2, and hw3 classes still appear in these artifacts.
+
+Additionally, describe how to run your command line application.

@@ -1,0 +1,29 @@
+* GUI File Searcher
+** Requirements
+See the hw4 spec for a description of the command line application file
+searcher.  Your job is to create a GUI application that accomplishes the same
+task.  The application should be a friendly to non-technical users.  Of course,
+you may take liberties with the visualization as long as the application
+fulfills the same requirements - so, for instance, it's not vital that *only*
+one hundred characters surrounding an occurrence are displayed.
+
+* Extra Credit
+Features of the GUI application beyond the requirements may be considered for
+extra credit.  Features that are purely visual are less likely to be considered,
+but you're encouraged to have fun with this.  You're also recommended to get the
+basic functionality solid before experimenting.
+
+Here are some ideas for extra features:
+- Nice formatting for the search results, such as a collapsible menu for files
+  that expand into the list of occurrences for that file.
+- Multi-term searches, where only the intersection between the searches for
+  multiple words is displayed.
+- Button to toggle between case-sensitive and insensitive search (probably have
+  to change the structure of the file index slightly).
+
+* Requirements
+Write a README that describes how to use a ~make~ command to run your GUI
+application.  If you implement any features you'd like considered for extra
+credit, list them here to make sure we find them.  For the required features, it
+should not be necessary for a user to read the README in order to learn how to
+use it - the basic usage should be intuitive or explained in the app.

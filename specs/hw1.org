@@ -1,0 +1,22 @@
+* The Occurrence Index
+** Definition
+One way to represent a file in memory is to think of it as a map from words to a
+list of locations in the file where the word occurs.  This is useful because
+most text files are composed of a relatively small set of words that repeat many
+times, wasting data.  As a bonus, it is easy to find where words occur in a
+file, or whether the word occurs in the file at all.
+
+For this assignment, a location is just a non-negative integer that indexes into
+the file.  Think of this as the number of characters before the word occurs.
+
+** Requirements
+This should be able to be used in an application that gives the index a word and
+a position one at a time.  At any time, with good performance, the application
+should be able to retrieve a list of the locations where a specified word
+occurs.  It should also be possible to view all the words in the index.
+
+* Requirements
+Write a README that describes how to use a ~make~ command to generate:
+- ~build/submission.jar~: A library containing the classes you implemented.
+- ~build/docs/index.html~: A webpage that describes the interface of the classes
+  you implemented.

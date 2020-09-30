@@ -1,0 +1,17 @@
+** Usability
+None.
+** FileIndex
+*** Complaint 1
+Context:
+I checked the structure of a file index, which was constructed by adding an empty occurrence index and an occurrence index with one word, w0, in file f1.
+
+Problem:
+I expected The set of files containing w0 contains f1 to be true.
+
+*** Complaint 2
+Context:
+I checked the structure of a file index which was constructed by adding an empty occurrence index, an occurrence index with one word, w0, in file f1, and an occurrence index with 4 words, w0, w1, w2, and w3, in file f2.
+
+Problem:
+I expected The set of files containing w0 contains f1 to be true.
+

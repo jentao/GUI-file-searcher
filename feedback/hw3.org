@@ -1,0 +1,18 @@
+** Usability
+Good job on this assignment! 
+It was extremely easy to grade your work. Please consider submitting a regrade
+request after fixing the errors in your tests.
+** Parser
+*** Complaint 1
+Context: I parsed a directory containing several files and subdirectories into a file
+index.
+
+Problem: After loading files I looked up the index of the word "apple" in
+aliceinwonderland. I expected:<[9074]> but was:<[9069]>
+
+*** Complaint 2
+Context: I parsed a directory containing several files into a file index.
+
+Problem: After loading files I looked up the index of the word "apple" in
+aliceinwonderland. I expected:<[9074]> but was:<[9069]>
+
